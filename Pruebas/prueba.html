@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja Registradora</title>
+</head>
+<body>
+    <h1>Caja Registradora</h1>
+
+    <div>
+        <h2>Apertura de Caja</h2>
+        <label for="montoApertura">Monto de Apertura:</label>
+        <input type="number" id="montoApertura">
+        <button onclick="abrirCaja()">Abrir Caja</button>
+    </div>
+
+    <div>
+        <h2>Ingresos de Venta</h2>
+        <label for="producto">Producto:</label>
+        <input type="text" id="producto">
+        <label for="valor">Valor:</label>
+        <input type="number" id="valor">
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad">
+        <button onclick="registrarVenta()">Registrar Venta</button>
+    </div>
+
+    <div>
+        <h2>Ingreso de Gastos</h2>
+        <label for="descripcion">Descripción:</label>
+        <input type="text" id="descripcion">
+        <label for="montoGasto">Monto:</label>
+        <input type="number" id="montoGasto">
+        <button onclick="registrarGasto()">Registrar Gasto</button>
+    </div>
+
+    <div>
+        <h2>Resumen</h2>
+        <p>Total de Utilidad: $<span id="totalUtilidad">0</span></p>
+        <button onclick="cerrarCaja()">Cerrar Caja</button>
+    </div>
+
+    <script src="caja.js"></script>
+</body>
+</html>

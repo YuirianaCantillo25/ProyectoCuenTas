@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario de Productos</title>
+</head>
+<body>
+    <h1>Inventario de Productos</h1>
+    <table id="product-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre del Producto</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Cantidad en Stock</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Producto 1</td>
+                <td>Descripción del Producto 1</td>
+                <td>$19.99</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Producto 2</td>
+                <td>Descripción del Producto 2</td>
+                <td>$24.99</td>
+                <td>30</td>
+            </tr>
+            <!-- Agrega más filas para otros productos -->
+        </tbody>
+    </table>
+    <button id="add-product-button">Agregar Producto</button>
+    
+    <script>
+        // Función para agregar un nuevo producto a la tabla
+        function agregarProducto() {
+            const table = document.getElementById("product-table").getElementsByTagName('tbody')[0];
+            const newRow = table.insertRow(table.rows.length);
+            
+            const cell1 = newRow.insertCell(0);
+            const cell2 = newRow.insertCell(1);
+            const cell3 = newRow.insertCell(2);
+            const cell4 = newRow.insertCell(3);
+            const cell5 = newRow.insertCell(4);
+            
+            cell1.innerHTML = table.rows.length; // ID del producto
+            cell2.innerHTML = "Nuevo Producto"; // Nombre del producto
+            cell3.innerHTML = "Descripción del Nuevo Producto"; // Descripción
+            cell4.innerHTML = "$29.99"; // Precio
+            cell5.innerHTML = "10"; // Cantidad en Stock
+        }
+        
+        // Agregar un evento clic al botón
+        document.getElementById("add-product-button").addEventListener("click", agregarProducto);
+    </script>
+</body>
+</html>

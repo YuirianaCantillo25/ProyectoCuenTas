@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>cuenTas - Compras</title>
+</head>
+<body>
+    <div class="container">
+        <h1>cuenTas - Compras</h1>
+
+        <div id="registroCompra">
+            <h2>Registro de Compra</h2>
+            <label for="codigoProducto">Código del Producto:</label>
+            <input type="text" id="codigoProducto" placeholder="Ingrese código del producto">
+            <button onclick="buscarProducto()">Buscar</button>
+            
+            <label for="nombreProducto">Nombre del Producto:</label>
+            <input type="text" id="nombreProducto" placeholder="Nombre del producto" readonly>
+            <label for="costo">Costo:</label>
+            <input type="number" id="costo" placeholder="Costo" readonly>
+            <label for="unidadesCompradas">Unidades Compradas:</label>
+            <input type="number" id="unidadesCompradas" placeholder="Ingrese unidades compradas">
+            <button onclick="registrarCompra()">Registrar Compra</button>
+        </div>
+    </div>
+
+    <script src="compras.js"></script>
+</body>
+</html>

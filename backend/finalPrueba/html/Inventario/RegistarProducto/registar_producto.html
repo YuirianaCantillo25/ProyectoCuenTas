@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>cuenTas - Inventario</title>
+</head>
+<body>
+    <div class="container">
+        <h1>cuenTas - Inventario</h1>
+
+        <div id="registroProducto">
+            <h2>Registrar Producto</h2>
+            <label for="codigoProducto">Código del Producto:</label>
+            <input type="text" id="codigoProducto" placeholder="Ingrese código del producto">
+            <label for="nombreProducto">Nombre del Producto:</label>
+            <input type="text" id="nombreProducto" placeholder="Ingrese nombre del producto">
+            <label for="costo">Costo:</label>
+            <input type="number" id="costo" placeholder="Ingrese costo">
+            <label for="precioVenta">Precio de Venta:</label>
+            <input type="number" id="precioVenta" placeholder="Ingrese precio de venta">
+            <label for="existenciaInicial">Existencia Inicial:</label>
+            <input type="number" id="existenciaInicial" placeholder="Ingrese existencia inicial">
+            <label for="imagenProducto">Imagen del Producto:</label>
+            <input type="file" id="imagenProducto" accept="image/*">
+            <button onclick="registrarProducto()">Registrar Producto</button>
+        </div>
+    </div>
+
+    <script src="registar_producto.js"></script>
+</body>
+</html>

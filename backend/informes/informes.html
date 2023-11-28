@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Agrega la referencia a la biblioteca Moment.js -->
+    <script src="https://cdn.jsdelivr.net/npm/moment"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>cuenTas - Informes</title>
+</head>
+<body>
+    <div class="container">
+        <h1>cuenTas - Informes</h1>
+
+        <div id="informes">
+            <h2>Informe de Ingresos y Gastos</h2>
+
+            <label for="fechaDesde">Desde:</label>
+            <input type="date" id="fechaDesde">
+
+            <label for="fechaHasta">Hasta:</label>
+            <input type="date" id="fechaHasta">
+
+            <button onclick="buscarInformes()">Buscar</button>
+
+            <div id="graficoContainer">
+                <canvas id="grafico"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="informes.js"></script>
+</body>
+</html>

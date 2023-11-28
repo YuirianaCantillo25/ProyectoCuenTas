@@ -1,0 +1,47 @@
+<!-- caja.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>cuenTas - Contabilidad</title>
+</head>
+<body>
+    <div class="container">
+        <h1>cuenTas - Contabilidad</h1>
+
+        <div id="cajaDiaria">
+            <h2>Caja Diaria</h2>
+            <label for="apertura">Monto de Apertura:</label>
+            <input type="number" id="apertura" placeholder="Ingrese monto">
+            <button onclick="abrirCaja()">Abrir Caja</button>
+
+            <h3>Ingresos</h3>
+            <label for="codigoProducto">Código del Producto:</label>
+            <input type="text" id="codigoProducto" placeholder="Ingrese código del producto">
+            <label for="nombreProducto">Nombre del Producto:</label>
+            <input type="text" id="nombreProducto" placeholder="Ingrese nombre del producto">
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" placeholder="Ingrese cantidad">
+            <label for="valor">Valor:</label>
+            <input type="number" id="valor" placeholder="Ingrese valor">
+            <button onclick="registrarIngreso()">Registrar Ingreso</button>
+
+            <h3>Gastos</h3>
+            <label for="descripcionGasto">Descripción del Gasto:</label>
+            <input type="text" id="descripcionGasto" placeholder="Ingrese descripción del gasto">
+            <label for="montoGasto">Monto:</label>
+            <input type="number" id="montoGasto" placeholder="Ingrese monto">
+            <button onclick="registrarGasto()">Registrar Gasto</button>
+            
+            <h3>Balance General</h3>
+            <p id="balance">Balance General: $0</p>
+
+            <button onclick="cerrarCaja()">Cerrar Caja</button>
+        </div>
+    </div>
+
+    <script src="caja.js"></script>
+</body>
+</html>

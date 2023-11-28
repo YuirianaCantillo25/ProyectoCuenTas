@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Iniciar Sesión</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../toastify/toastify.min.css"> <!-- Agregado -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="notificaciones.js"></script>
+</head>
+
+<body class="m-1">
+  <header>
+    <div class="navbar navbar-expand-lg bg-body-tertiary c6 justify-content-center">
+      <a class="p-0 m-1 fs-2 fw-bold navbar-brand logo" href="index.html">
+        CuenTas
+      </a>
+    </div>
+  </header>
+
+  <main class="d-flex card-box">
+    <div class="p-2 flex-shrink-1 p-5 maxw c6 card"> <!-- Formulario -->
+      <p class="h2 fw-bold text-center">Inicio de Sesión</p>
+      <form class="row g-3 needs-validation" action="login.php" method="post" novalidate>
+        <div class="">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control c6" name="email" id="email" aria-describedby="helpId"
+            placeholder="ejemplo@ejemplo.com" required>
+          <small id="helpId" class="form-text text-muted">Ingrese su dirección de correo electrónico</small>
+        </div>
+
+        <div class="">
+          <label for="contraseña" class="form-label">Contraseña</label>
+          <input type="password" class="form-control c6" name="contraseña" id="contraseña" aria-describedby="helpId"
+            placeholder="ejemplo123" required>
+          <small id="helpId" class="form-text text-muted">Recuerde ingresar la clave que asignó a este usuario y no la
+            clave de su correo.</small>
+        </div>
+
+        <div class="">
+          <input class="form-check-input c2" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">Estoy de acuerdo con los términos y condiciones</label>
+          <div class="invalid-feedback">
+            Debes estar de acuerdo antes de enviar.
+          </div>
+        </div>
+        <div class="col-12 box-btn-sumit btn">
+          <button class="btn btn c3 t-btn" type="submit">Iniciar Sesión</button>
+        </div>
+      </form>
+      <span class="texto-footer"> ¿Aún no tienes una cuenta? <a class="footer-link" href="singup.html"> Regístrate</a>
+      </span>
+    </div>
+
+    <div class="p-2 w-100">
+      <div class="card c1 mw-100 m-1 p-2 text-center minh">
+        <h2>Fácil</h2>
+        <p class="text">Olvídate de los complicados cálculos manuales y la dificultad para seguir el ritmo de las
+          transiciones</p>
+      </div>
+
+      <div class="card c2 mw-100 m-1 p-2 text-center minh">
+        <h2>Ágil</h2>
+        <p class="text">Registrar ventas y gastos ahora será mucho más fácil y rápido</p>
+      </div>
+
+      <div class="card c3 mw-100 m-1 p-2 text-center minh">
+        <h2>Autónomo</h2>
+        <p class="text">Despreocúpate de los procesos, genera informes detallados y toma decisiones informadas con
+          confianza</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+  <script src="../js/login.js"></script>
+ 
+</body>
+
+</html>

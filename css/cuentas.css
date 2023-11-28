@@ -1,0 +1,210 @@
+/* Estilos de reset */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* Estilos generales del cuerpo */
+body {
+  padding: 0;
+  min-width: 375px;
+  background-color: #f0f0f0;
+  font-family: 'Bree Serif', serif;
+}
+
+/* Estilos de encabezados */
+h1 {
+  font-weight: 400px;
+  font-size: 3rem;
+}
+
+h2 {
+  font-weight: 400px;
+  font-size: 1.4rem;
+}
+
+/* Estilos de botones */
+button {
+  width: 100%;
+  font-family: 'Bree Serif', serif;
+}
+
+/* Estilos de tablas */
+th {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+td {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+/* Estilos de la barra lateral */
+.area {
+  display: flex;
+}
+
+.logo {
+  text-align: center;
+  font-weight: 600;
+  font-size: xx-large;
+}
+
+/* Estilos de botones de acción */
+.t-btn {
+  border: none;
+}
+
+/* Estilos de la sección de inicio */
+.inicio {
+  display: block;
+}
+
+/* Estilos del botón de cierre de sesión */
+.logout {
+  margin-top: 95%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+}
+
+/* Estilos de las acciones */
+.action {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Estilos de las secciones de apertura y cierre de caja */
+.open_closed {
+  background-color: #fff;
+  border-radius: 10px;
+  border-bottom: 5px solid #97979763;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  display: flex;
+}
+
+/* Estilos de los botones al pasar el mouse sobre ellos */
+.t-btn:hover {
+  color: white !important;
+  background-color: #0A4E65 !important;
+  border-bottom: 5px solid #009CC6 !important;
+}
+
+/* Estilos de formularios */
+.formulario {
+  height: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 20px 20px 20px 15px;
+  font-family: 'Bree Serif', serif;
+}
+
+/* Estilos de las pestañas ocultas */
+.tab-content {
+  display: none;
+}
+
+/* Estilos de las tarjetas con colores */
+.c1 {
+  color: #F05176;
+  background-color: #FBE3E8;
+  border-bottom: 5px #F051763D solid;
+}
+
+.c2 {
+  color: #FF8100;
+  background-color: #FDEEDF;
+  border-bottom: 5px #FF81003D solid;
+}
+
+.c3 {
+  color: #00C555;
+  background-color: #E5F9EE;
+  border-bottom: 5px #00c5553d solid;
+}
+
+.c4 {
+  color: #009CC6;
+  background-color: #bbf0ff;
+  border-bottom: 5px #009CC63D solid;
+}
+
+.c5 {
+  color: black;
+  background-color: #fff;
+  border: 1px solid #8080809D;
+  border-bottom: 5px grey solid;
+}
+
+/* Estilos de las tarjetas */
+.card {
+  padding: 20px 20px 20px 10px;
+  margin: 10px 5px 5px 5px;
+  border-radius: 10px;
+  position: static;
+}
+
+/* Estilos del pie de página */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Estilos para elementos con clase 'serch' */
+.serch {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilos para elementos con clase 'ws-10' */
+.ws-10 {
+  width: 100px;
+}
+
+/* Estilos extras */
+.f-np {
+  display: none;
+}
+
+/* Estilos para pantallas móviles */
+@media screen and (max-width: 800px) {
+  .navbar {
+    padding: 0px !important;
+    width: min-content;
+  }
+
+  .logo {
+    width: min-content;
+  }
+
+  .text {
+    display: none;
+  }
+
+  .n-btn {
+    margin: 5px 2px 2px 2px;
+    padding: 15px;
+    width: min-content;
+  }
+
+  .area {
+    min-width: 500px;
+  }
+}

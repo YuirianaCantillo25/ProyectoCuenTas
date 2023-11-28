@@ -1,0 +1,139 @@
+body {
+    padding: 0;
+    font-family: 'Bree Serif', serif;
+    min-width: 375px;
+    background-color: white;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+h2{
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+p{
+    font-size: large;
+}
+
+.navbar{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 2px;
+}
+
+.nav-link{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.logo {
+    color: #0A4E65;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.button {
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+    width: min-content;
+}
+
+.content {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Hovers */
+
+.button:hover{
+    color: white;
+    background-color: #0A4E65;
+    border-bottom: 3px solid #009CC6;
+}
+
+/****************** Color ********************/
+
+.c1{
+    color: #F05176;
+    background-color: #FBE3E8;
+    border-bottom: 3px #F051763D solid;
+}
+
+.c2{
+    color: #FF8100;
+    background-color: #FDEEDF;
+    border-bottom: 3px #FF81003D solid;
+}
+
+.c3{
+    color: #00C555;
+    background-color: #E5F9EE;
+    border-bottom: 3px #00c5553d solid;
+}
+
+.c4 {
+    color: #009CC6;
+    background-color: #bbf0ff;
+    border-bottom: 3px #009CC63D solid;
+}
+
+.c5{
+    color: white;
+    background-color: #0A4E65;
+    border-bottom: 3px solid #009CC6;
+}
+
+.c6{
+    color: black;
+    background-color: #fff;
+    border-bottom: 3px #80808089 solid;
+}
+
+.card {
+    padding: 40px;
+    margin: 10px 5px 5px 5px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cards-box {
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    font-size: large;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media screen and (min-width: 1201px){
+    .card {
+        max-height: max-content;
+        min-height: max-content;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .cards-box {
+        display: block;
+        justify-content: center;
+    }
+
+    .card{
+        min-width: none;
+    }
+}
